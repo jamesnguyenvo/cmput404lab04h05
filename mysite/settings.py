@@ -1,3 +1,4 @@
+import django_heroku # top of the file
 """
 Django settings for mysite project.
 
@@ -119,3 +120,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+django_heroku.settings(locals()) # bottom of the file
